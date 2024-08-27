@@ -3,6 +3,10 @@ output "resource_group_name" {
   value       = azurerm_resource_group.rg.name
 }
 
+output "prefix_id" {
+  value = random_pet.prefix.id
+}
+
 output "virtual_network_name" {
   description = "The name of the created virtual network."
   value       = azurerm_virtual_network.my_terraform_network.name
